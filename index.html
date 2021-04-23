@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-        <h1>Tic Tac Toe</h1>
-        <table>
-            <tbody>
-                <tr><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td></tr>
-            </tbody>   
-        </table>
-    </main>
+    <div class="main">
+        <div class="game-section">
+            <h1>Tic Tac Toe</h1>
+            <table>
+                <tbody>
+                    <tr><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td></tr>
+                </tbody>   
+            </table>
+            <div class="btns">
+                <input type="submit" value="Start New" class="st-btn">
+                <input type="submit" value="Reset" class="rst-btn">
+            </div>
+        </div>
+        <div class="score-section">
+            <h2>Wins</h2>
+            <ol class="matches-played"></ol> 
+        </div>      
+    </div>
     <script src="./game.js"></script>
 </body>
 </html>
